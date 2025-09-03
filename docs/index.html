@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Consolas,monaco,monospace;
         }
 
         /* Fundo com imagem semi-transparente */
@@ -40,9 +40,10 @@
 
         /* Container principal com efeito vidro (Mica escuro) */
         .container {
-            background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+            background: rgba(21, 24, 27, 0.7); /* Preto semi-transparente */
             backdrop-filter: blur(15px);
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(66, 150, 245, 0.3);
             border-radius: 12px;
             padding: 30px;
             width: 350px;
@@ -62,8 +63,8 @@
             width: 100%;
             padding: 12px;
             border-radius: 8px;
-            border: none;
-            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(66, 150, 245, 0.3);
+            background: rgba(255, 255, 255, 0);
             color: white;
             outline: none;
             font-size: 16px;
@@ -77,16 +78,16 @@
         }
 
         input:focus {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0);
         }
 
         /* Botão estilizado */
         button {
             width: 100%;
             padding: 12px;
-            border: none;
+            border: 1px solid rgba(66, 150, 245, 0.3);
             border-radius: 8px;
-            background: #0078D7;
+            background: rgba(66, 150, 245, 0);
             color: white;
             font-size: 16px;
             cursor: pointer;
@@ -95,7 +96,7 @@
         }
 
         button:hover {
-            background: #005bb5;
+            background: rgba(66, 150, 245, 0.3);
         }
 
         /* Resultado */
@@ -115,8 +116,8 @@
 
     <!-- Container principal -->
     <div class="container">
-        <h1 id="he"><strong>nxhook</strong> 🔗 key</h1>
-        <input type="text" id="base64Input" placeholder="key">
+        <h1 id="he"><strong>nxhook</strong> loader</h1>
+        <input type="text" id="base64Input" placeholder="key" readonly>
         <button id="openBtn"> COPY KEY </button>
         <p id="resultado"></p>
     </div>
